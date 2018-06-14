@@ -130,7 +130,7 @@ export default class ReadingPositionIndicator {
       // after position indicator
       this.state.virtualDOM.progressBarPercentageTextContent = '';
       this.state.virtualDOM.progressBarPercentage = '100';
-      this.state.virtualDOM.progressBarPositionStyleTransform = 'scaleX(0)';
+      this.state.virtualDOM.progressBarPositionStyleTransform = 'scaleX(1)';
     } else {
       const offset = scrollPosition - this.state.rpiArea.top;
       const percentage = Math.round((100 * offset) / Math.max(maxHeight, 1));
